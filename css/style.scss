@@ -1,0 +1,134 @@
+//! COLORS
+$black: #212121;
+$green: #00897b;
+$lightgreen: #1CEABE;
+$blue: #3949ab;
+.white {
+  background: #fff;
+}
+.gray {
+    //background: #fff;
+    background: #e4fdf9;
+}
+.d-gray {
+    //background: #f1f2f6;
+    //background: #ecf0f1;
+    background: #F7F7F7;
+}
+.blue {
+    background: $blue;
+}
+
+//! RED & GREEN
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+
+//! BUTTONS
+//! BTN-1
+.btn-1 {
+    font-size: 1.2em;
+    width: 150px;
+    padding: 12px 40px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 0.12s linear;
+    border-radius: 0px;
+    &:hover {
+      background: $green;
+      border: 2px solid $green;
+      //box-shadow: 0 0 5px $green;
+    }
+  }
+//! BTN-2
+  .btn-2 {
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    background: $green;
+    color: #fff;
+    border: none;
+    transition: 0.12s linear;
+    border-radius: 0px;
+    &:hover {
+      box-shadow: 0 0 5px $green;
+    }
+  }
+
+//! ========================================
+//! ========================================
+//! ========================================
+
+.text-shadow {
+  text-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+}
+.text-main {
+  color: #061E37;
+}
+.bg-main {
+  background: #061E37;
+}
+.border-color-main {
+  border-color: #061E37;
+}
+.border-main {
+  border-radius: 25px;
+}
+
+
+section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+
+#top {
+  min-height: 100vh;
+  padding: 0;
+  padding-bottom: 100px;
+  #header {
+    margin-top: 4%;
+  }
+}
+
+#myMap {
+  min-height: 100vh;
+  #map {
+    margin-top: 5vh;
+    width: 100%;
+    height: 88vh;
+  }
+}
+
+#advantages {
+  min-height: 100vh;
+}
+
+#design {
+  min-height: 100vh;
+}
+
+._error {
+  box-shadow: 0 0 25px red;
+}
+
+/// Light
+$header-light-1: #1ceabe;
+$header-light-2: #0cb2ca;
+@media (prefers-color-scheme: light) {
+  #top {
+    background: linear-gradient(-45deg, $header-light-1 0%, $header-light-2 100%);
+  }
+}
+
+/// Dark
+$header-dark-1: #e31541;
+$header-dark-2: #f34d35;
+@media (prefers-color-scheme: dark) {
+  #top {
+    background: linear-gradient(-45deg, $header-dark-1 0%, $header-dark-2 100%);
+  }
+}
