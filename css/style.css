@@ -47,7 +47,7 @@
 }
 
 section {
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 100px;
   min-height: 100vh;
 }
@@ -153,4 +153,12 @@ section {
     left: 65%;
     opacity: 0;
   }
+}
+#download {
+  min-height: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 23vh;
+}
+#download #btn-download {
+  border-radius: 25px;
 }
