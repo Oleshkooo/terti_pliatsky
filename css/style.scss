@@ -101,6 +101,10 @@ section {
     position: relative;
     animation: move 5s ease-in-out infinite normal running 0s;
   }
+  #animation-shoot {
+    position: relative;
+    animation: shoot 2s ease-in-out infinite normal running 0s;
+  }
 }
 
 @keyframes move {
@@ -115,5 +119,22 @@ section {
   }
   100% {
     left: 0%;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 65%;
+    opacity: 0;
   }
 }
