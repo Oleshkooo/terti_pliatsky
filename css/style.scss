@@ -70,7 +70,7 @@ section {
 
 #particles-js-header {
   background-image: linear-gradient(to bottom, #2e005a, #3d0e6b, #4d1c7d, #5d298f, #6d37a1);
-  height: 110vh;
+  min-height: 110vh;
   padding: 0;
   nav {
     width: 100%;
