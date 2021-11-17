@@ -78,7 +78,7 @@ section {
 }
 
 .nav-clicked {
-  padding-top: 25vh;
+  padding-top: 28vh;
 }
 
 #border {
@@ -86,6 +86,11 @@ section {
   min-height: 5vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  div {
+    h4 {
+      line-height: 150%;
+    }
+  }
 }
 
 #manual {
