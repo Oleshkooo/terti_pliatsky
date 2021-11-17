@@ -55,7 +55,7 @@ section {
 #particles-js-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2e005a), color-stop(#3d0e6b), color-stop(#4d1c7d), color-stop(#5d298f), to(#6d37a1));
   background-image: linear-gradient(to bottom, #2e005a, #3d0e6b, #4d1c7d, #5d298f, #6d37a1);
-  min-height: 110vh;
+  height: 125vh;
   padding: 0;
 }
 #particles-js-header nav {
@@ -64,7 +64,7 @@ section {
   padding-top: 1vh;
 }
 #particles-js-header header {
-  margin-top: 12%;
+  margin-top: 12.5%;
   width: 100%;
   position: absolute;
   -webkit-transition: 0.4s ease-in-out;
