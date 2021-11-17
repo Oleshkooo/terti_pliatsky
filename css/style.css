@@ -3,7 +3,7 @@
 }
 
 .gray {
-  background: #e4fdf9;
+  background: #f5f5f5;
 }
 
 .d-gray {
@@ -52,18 +52,19 @@ section {
   min-height: 100vh;
 }
 
-#particles-js {
+#particles-js-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2e005a), color-stop(#3d0e6b), color-stop(#4d1c7d), color-stop(#5d298f), to(#6d37a1));
   background-image: linear-gradient(to bottom, #2e005a, #3d0e6b, #4d1c7d, #5d298f, #6d37a1);
   height: 100vh;
   padding: 0;
 }
-#particles-js nav {
+#particles-js-header nav {
   width: 100%;
   position: absolute;
+  padding-top: 1vh;
 }
-#particles-js header {
-  margin-top: 10%;
+#particles-js-header header {
+  margin-top: 12%;
   width: 100%;
   position: absolute;
   -webkit-transition: 0.4s ease-in-out;
@@ -79,4 +80,40 @@ section {
   min-height: 5vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
+}
+
+#manual #animation-move {
+  position: relative;
+  -webkit-animation: move 5s ease-in-out infinite normal running 0s;
+          animation: move 5s ease-in-out infinite normal running 0s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0%;
+  }
+  25% {
+    left: -20%;
+  }
+  75% {
+    left: 20%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0%;
+  }
+  25% {
+    left: -20%;
+  }
+  75% {
+    left: 20%;
+  }
+  100% {
+    left: 0%;
+  }
 }

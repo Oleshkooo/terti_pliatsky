@@ -11,12 +11,12 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+particlesJS('particles-js-header',
   
   {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 150,
         "density": {
           "enable": true,
           "value_area": 800
@@ -36,22 +36,22 @@ particlesJS('particles-js',
         },
       },
       "opacity": {
-        "value": 0.8,
+        "value": 0.9,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 1,
-          "opacity_min": 0.3,
+          "opacity_min": 0.4,
           "sync": false
         }
       },
       "size": {
-        "value": 4,
+        "value": 1.5,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 40,
-          "size_min": 0.3,
+          "size_min": 0.5,
           "sync": false
         }
       },
@@ -69,7 +69,7 @@ particlesJS('particles-js',
         // "direction": "top",
         "direction": "bottom",
         "random": false,
-        "straight": false,
+        "straight": true,
         "out_mode": "out",
         "attract": {
           "enable": false,
@@ -82,11 +82,11 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
