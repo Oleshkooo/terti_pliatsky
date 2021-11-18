@@ -87,8 +87,8 @@ section {
 
 #manual #animation-move {
   position: relative;
-  -webkit-animation: move 5s ease-in-out infinite normal running 0s;
-          animation: move 5s ease-in-out infinite normal running 0s;
+  -webkit-animation: move 8s ease-in-out infinite normal running 0s;
+          animation: move 8s ease-in-out infinite normal running 0s;
 }
 #manual #animation-shoot {
   position: relative;
