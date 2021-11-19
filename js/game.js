@@ -22,6 +22,8 @@ const ENEMY_VERTICAL_PADDING = 70;
 const ENEMY_VERTICAL_SPACING = 80;
 const ENEMY_COOLDOWN = 5.0;
 
+var score = 0;
+
 const GAME_STATE = {
   lastTime: Date.now(),
   leftPressed: false,
@@ -203,6 +205,8 @@ function updateEnemies(dt, $container) {
 function destroyEnemy($container, enemy) {
   $container.removeChild(enemy.$element);
   enemy.isDead = true;
+  score += 100;
+  // console.log(score);
 }
 
 // ! createEnemyLaser
