@@ -1,0 +1,194 @@
+//! COLORS
+$black: #212121;
+$green: #00897b;
+$lightgreen: #1ceabe;
+$blue: #3949ab;
+.white {
+  background: #fff;
+}
+.gray {
+  //background: #fff;
+  // background: #e4fdf9;
+  background: #f5f5f5;
+}
+.d-gray {
+  //background: #f1f2f6;
+  //background: #ecf0f1;
+  background: #f7f7f7;
+}
+.blue {
+  background: $blue;
+}
+
+//! RGB
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: $blue;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+//! ========================================
+//! ========================================
+//! ========================================
+
+
+.text-main {
+  color: #061e37;
+}
+.bg-main {
+  background: #061e37;
+}
+.border-color-main {
+  border-color: #061e37;
+}
+.border-main {
+  border-radius: 25px;
+}
+
+//! ========================================
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+.game-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
+
+$GAME_WIDTH: 800px;
+$GAME_HEIGHT: 600px;
+
+#particles-bg {
+  width: $GAME_WIDTH;
+  height: $GAME_HEIGHT;
+  background: url(/img/Bg/black.png);
+  animation: scroll-bg 5s linear infinite;
+}
+
+.game {
+  position: absolute;
+  overflow: hidden;
+  width: $GAME_WIDTH;
+  height: $GAME_HEIGHT;
+  // background: url(/img/Bg/black.png);
+  // animation: scroll-bg 5s linear infinite;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  .enemy {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -18px;
+    width: 40px;
+  }
+  .player {
+    position: absolute;
+    margin-left: -20px;
+    width: 40px;
+  }
+  .laser {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 30px;
+  }
+  .enemy-laser {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 30px;
+  }
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 256px;
+  }
+}
+
+.congratulations {
+  display: none;
+  position: absolute;
+  background: #c7a526;
+  color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  animation: pop-in 1s;
+}
+
+.game-over {
+  display: none;
+  position: absolute;
+  background: #c7a526;
+  color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  animation: pop-in 1s;
+}
+
+.btn {
+  border: 2px solid #36bbf5;
+  border-radius: 3px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 49%,
+    #f5f5f5 50%,
+    #eee 100%,
+  );
+  padding: 10px 40px;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
